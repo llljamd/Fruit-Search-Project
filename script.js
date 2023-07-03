@@ -7,12 +7,19 @@ function search(str) {
 	let results = [];
 
 	// TODO
+	results = fruit.map(element => {
+		return element.toLowerCase()}).filter(suggestions => {
+		return suggestions.includes(str);
+		})
 
+	console.log(results);
 	return results;
 }
 
 function searchHandler(e) {
 	// TODO
+	let str = e.target.value.toLowerCase();
+	search(str);
 }
 
 function showSuggestions(results, inputVal) {
