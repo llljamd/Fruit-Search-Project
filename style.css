@@ -1,13 +1,12 @@
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 :focus {
- /* TODO */
-}
+  outline-offset: 2px;}
 
 body {
-  /* TODO */
+  background-image: linear-gradient(to right, #f4cb22, #df4f00);
 }
 
 input {
