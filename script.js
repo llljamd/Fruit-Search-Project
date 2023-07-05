@@ -34,7 +34,8 @@ function showSuggestions(results, inputVal) {
 }
 
 function useSuggestion(e) {
-	// TODO
+	input.value = e.target.innerText;
+	suggestions.replaceChildren();
 }
 
 input.addEventListener('keyup', searchHandler);
