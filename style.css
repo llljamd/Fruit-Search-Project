@@ -3,43 +3,58 @@
 }
 
 :focus {
-  outline-offset: 2px;}
+  outline-offset: 2px;
+  border: 2px solid red;
+}
 
 body {
   background-image: linear-gradient(to right, #f4cb22, #df4f00);
 }
 
 input {
- /* TODO */
+  border: none;
+  border-bottom: 2px solid red;
+  height: 7%;
+  width: 25%;
+  background-color: rgba(255, 255, 255, .25);
+  padding: 10px;
+  outline: none;
 }
 
 .search-container {
- /* TODO */
+  text-align: center;
+  width: 100%;
+  margin-top: 25%;
+  font-size: 0;
 }
+
 .search-container input,
 .search-container .suggestions {
-  /* TODO */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .search-container input {
- /* TODO */
+  font-size: 16px;
 }
+
 .search-container .suggestions {
-   /* TODO */
+  margin: auto;
+  text-align: left;
+  width: 25%;
 }
 
 ul {
-  /* TODO */
-}
-ul.has-suggestions {
-  /* TODO */
-}
-ul li {
-  /* TODO */
-}
-ul li:hover {
-  /* TODO */
+  list-style-type: none;
+  padding-left: 0px;
 }
 
-input {
-   /* TODO */
+ul li {
+  background-color: rgba(255, 255, 255, .25);
+  padding: 10px;
+  font-size: 16px;
+}
+
+ul li:hover {
+  background-color: orangered;
+  font-weight: bold;
 }

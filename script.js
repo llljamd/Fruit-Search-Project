@@ -17,14 +17,6 @@ function searchHandler(e) {
 	showSuggestions(options, e.target.value.toLowerCase())
 }
 
-function bold(e) {
-	e.target.style.backgroundColor = "red";
-}
-
-function backgroundBack(e) {
-	e.target.style.backgroundColor = "";
-}
-
 function showSuggestions(results, inputVal) {
 
 	suggestions.replaceChildren();
@@ -33,9 +25,6 @@ function showSuggestions(results, inputVal) {
 		results.forEach(element => {
 			const newItem = document.createElement("li");
 			const index = element.toLowerCase().indexOf(inputVal);
-
-			newItem.addEventListener("mouseover", bold);
-			newItem.addEventListener("mouseout", backgroundBack);
 
 			newItem.innerHTML = element.substr(0, index) + "<b>" + element.substr(index, inputVal.length) + "</b>" + element.substr(inputVal.length + index);
 	
